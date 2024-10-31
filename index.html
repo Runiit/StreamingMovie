@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Movie & TV Streaming</h1>
+
+        <!-- Filter Section -->
+        <div id="filter">
+            <label><input type="radio" name="type" value="all" checked> All</label>
+            <label><input type="radio" name="type" value="movie"> Movies</label>
+            <label><input type="radio" name="type" value="tv"> TV Shows</label>
+        </div>
+
+        <!-- Search Section -->
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a movie or TV show...">
+            <button onclick="fetchData()">Search</button>
+        </div>
+
+        <!-- New Releases Section -->
+        <div id="new-releases">
+            <button onclick="fetchNewReleases()">View New Releases</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
